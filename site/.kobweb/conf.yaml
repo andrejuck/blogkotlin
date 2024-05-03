@@ -1,0 +1,14 @@
+site:
+  title: "Kotlin Blog Study"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/dist/js/developmentExecutable/blogkotlin.js"
+      api: "build/libs/blogkotlin.jar"
+    prod:
+      script: "build/dist/js/productionExecutable/blogkotlin.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
